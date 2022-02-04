@@ -1,0 +1,6 @@
+framework module Pods_GifBackgroundImagePractice {
+  umbrella header "Pods-GifBackgroundImagePractice-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -20,11 +20,19 @@ class ViewController: UIViewController {
         tableview.delegate = self
         tableview.dataSource = self
     }
+    
+    @IBAction func onAdd() {
+        print("Add button tapped")
+    }
 
 
 }
 
 extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableview.deselectRow(at: indexPath, animated: true)
+    }
     
 }
 
